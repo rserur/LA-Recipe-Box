@@ -4,7 +4,7 @@ require 'pg'
 
 def get_recipes
   connection = PG.connect(dbname: 'recipe_box')
-  results = connection.exec('SELECT * FROM recipes')
+  results = connection.exec('SELECT * FROM recipes ORDER BY name ASC')
   connection.close
   results
 end
