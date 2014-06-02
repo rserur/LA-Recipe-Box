@@ -11,13 +11,21 @@
       %p
         %h2
           = @recipe_info[0]["name"]
+      %p
+        %h3
+          Description
+        = @recipe_info[0]["description"]
+      %h3
+        Ingredients
       %ol.ingredients
         - @ingredients.each do |ingredient|
           %li
             %span
               = ingredient["name"]
       %p
-        = @recipe_info[0]["description"]
+        %h3
+          Instructions
+        = @recipe_info[0]["instructions"]
       %p.back
         %a{:href => "/recipes"} Back to Recipe Box
 

@@ -59,7 +59,11 @@ body {
 }
 
 .ingredients {
-  margin: 2em;
+  margin: 1em 2em;
+}
+
+p {
+  margin-bottom: 1em;
 }
 
 ol li {
