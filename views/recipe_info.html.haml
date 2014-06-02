@@ -1,0 +1,10 @@
+%p
+  %h1
+    = @recipe_info[0]["name"]
+%p
+  = @recipe_info[0]["description"]
+
+%ul
+  - @ingredients.each do |ingredient|
+    %li
+      = ingredient["name"]

@@ -27,12 +27,12 @@ end
 
 get '/recipes' do
   @recipes = get_recipes
-  erb :'recipes.html'
+  haml :'recipes.html'
 end
 
 get '/recipes/:id' do
   @recipe_id = params[:id]
   @recipe_info = get_recipe_info(@recipe_id)
   @ingredients = get_ingredients(@recipe_id)
-  erb :'recipe_info.html'
+  haml :'recipe_info.html'
 end
