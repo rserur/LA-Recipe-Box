@@ -1,10 +1,25 @@
-%p
-  %h1
-    = @recipe_info[0]["name"]
-%p
-  = @recipe_info[0]["description"]
+%html
+  %head
+    %title Recipe Box
+    %link{:href => "http://fonts.googleapis.com/css?family=Quattrocento:400,700|Quattrocento+Sans:400,700", :rel => "stylesheet", :type => "text/css"}
+    %link{:href => "/styles.css", :rel => "stylesheet", :type => "text/css"}
+  %body
+    %header
+      %h1
+        %a{:href => "/recipes"} Recipe Box
+    .main
+      %p
+        %h2
+          = @recipe_info[0]["name"]
+      %ol.ingredients
+        - @ingredients.each do |ingredient|
+          %li
+            %span
+              = ingredient["name"]
+      %p
+        = @recipe_info[0]["description"]
+      %p.back
+        %a{:href => "/recipes"} Back to Recipe Box
 
-%ul
-  - @ingredients.each do |ingredient|
-    %li
-      = ingredient["name"]
+
+

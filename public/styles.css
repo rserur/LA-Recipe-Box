@@ -1,0 +1,77 @@
+* {
+  font-family: 'Quattrocento Sans', "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+  padding-bottom: 2em;
+  border-bottom: 4px double #000000;
+  margin-bottom: 2em;
+}
+
+h1 a {
+  font-family: 'Quattrocento', "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: #aa1205;
+  text-decoration: none;
+}
+
+h1 a:hover {
+  color: #ce1508;
+}
+
+h2 {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.main a {
+  text-decoration: none;
+  color: #000;
+  font-size: 1.15em;
+  font-weight: 700;
+}
+
+.main a:hover {
+  background-color: #ff8c82;
+}
+
+body {
+  margin: 5em 10em;
+}
+
+.cols {
+  -moz-column-count: 3;
+  -moz-column-gap: 40px;
+  -webkit-column-count: 3;
+  -webkit-column-gap: 40px;
+}
+
+.full {
+  list-style: none;
+}
+
+.main {
+  line-height: 1.5;
+}
+
+.ingredients {
+  margin: 2em;
+}
+
+ol li {
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+ol li span {
+  font-weight: 400;
+}
+
+.back {
+  text-align: center;
+  margin-top: 2em;
+}
